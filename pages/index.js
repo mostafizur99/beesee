@@ -16,7 +16,6 @@ export default function Home() {
         <Header>Hello BeeSee</Header>
         <Button variant="outline-primary">Primary</Button>
       </Section>
-
     </>
   )
 }

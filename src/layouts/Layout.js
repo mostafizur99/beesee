@@ -1,12 +1,13 @@
 import styled from '@emotion/styled';
 import React from 'react';
 import colors from '../../styles/colors';
+import Header from '../components/shared/headers/Header';
 
 const Layout = ({ children, title, description }) => {
 
     return (
         <div>
-            <p>Nav</p>
+            <Header />
 
             <MainArea>{children}</MainArea>
 
