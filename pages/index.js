@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { css, } from '@emotion/react';
 import styled from '@emotion/styled';
+import colors from '../styles/colors';
 
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ padding-bottom: 34px;
 background: #FFFFFF;
 `;
 const Header = styled.p`
-color: red;
+color: ${colors.textColor};
 font-size: 32px;
 line-height: 48px;
 font-weight: 600;
