@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { css, } from '@emotion/react';
 import styled from '@emotion/styled';
 import colors from '../styles/colors';
+import { Button } from 'react-bootstrap';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
       <Section>
         <Header>Hello BeeSee</Header>
+        <Button variant="outline-primary">Primary</Button>
       </Section>
 
     </>
