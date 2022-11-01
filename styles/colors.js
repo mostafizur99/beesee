@@ -1,7 +1,7 @@
 const colors = {
     themePrimary: '#2a2c38',
     themeSecondary: '#881337',
-    primaryLight: '#B3B4ED',
+    primaryLight: '#2a2c3842',
     textColor: '#3B3B3B',
     textLight: '#595959',
     textDim: '#656565;',

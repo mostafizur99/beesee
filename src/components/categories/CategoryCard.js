@@ -33,7 +33,8 @@ const custom_card = css`
     border-radius: 8px;
     transition: .3s;
     &:hover{
-        border: 1px solid #3E1E77;
+        // border: 1px solid #3E1E77;
+        border: 1px solid ${colors.themeSecondary};
         box-shadow: 0px 24px 40px rgba(26, 26, 26, 0.16);
         }
 `;
