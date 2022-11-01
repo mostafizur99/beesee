@@ -31,7 +31,7 @@ const Categories = () => {
 export default Categories
 
 const Section = styled.section`
-    padding-bottom: 34px;
+    padding: 40px;
     background: #FFFFFF;
 `;
 const Header = styled.p`
