@@ -4,6 +4,7 @@ import { css, jsx } from '@emotion/react';
 import styled from '@emotion/styled';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import colors from '../../../../styles/colors';
+import { mainNavData } from '../../../datas/mainNavDb';
 
 const Header = () => {
     return (
@@ -18,31 +19,24 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end align-items-center">
                         <Nav>
-                            <Link href="/" passHref>
-                                <ItemText>
-                                    HOME
-                                </ItemText>
-                            </Link>
-                            <Link href="/" passHref>
-                                <ItemText>
-                                    CETEGORY
-                                </ItemText>
-                            </Link>
-                            <Link href="/" passHref>
-                                <ItemText>
-                                    BLOG
-                                </ItemText>
-                            </Link>
-                            <Link href="/" passHref>
-                                <ItemText>
-                                    LOGIN
-                                </ItemText>
-                            </Link>
+                            {
+                                mainNavData?.map((navItem, index) => {
+                                    return (
+                                        <Link key={index} href={navItem?.link} passHref>
+                                            <ItemText>
+                                                {navItem?.title}
+                                            </ItemText>
+                                        </Link>
+                                    )
+                                })
+                            }
+
                             <Link href="/" passHref>
                                 <ButtonNav>
                                     Join Now
                                 </ButtonNav>
                             </Link>
+
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
